@@ -1,0 +1,388 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    --bg-coral: #FF6565;
+    --clr-midnight-blue: #071629;
+    --clr-white: #ffffff;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+.container {
+    margin-inline: auto;
+    max-width: 1000px;
+    width: 92%;
+}
+
+
+/*******HEADER AND HERO SECTION********/
+.header_and_hero {
+    background: white url(./images/headphones_hero_1.jpg) no-repeat;
+    background-position: top 50% left 40%;
+    background-size: cover;
+    min-height: 50rem;
+    padding-bottom: 4.3125rem;
+}
+
+/*****HEADER SECTION******/
+nav {
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    padding-block: 1.74rem;
+    position: relative;
+}
+
+.hamburger {
+    cursor: pointer;
+    flex-shrink: 0;
+    height: 2rem;
+}
+
+.nav__logo {
+    width: 100%;
+}
+
+.logo {
+    flex-shrink: 0;
+    height: 2rem;
+    left: 50%;
+    position: absolute;
+    top: 45px;
+    transform: translate(-50%, -50%);
+    width: 10.0625rem;
+}
+
+.nav__list {
+    display: flex;
+    flex-flow: column;
+    gap: 2rem 1rem;
+    justify-content: space-between;
+    list-style: none;
+    margin-top: 2rem;
+    width: 90%;
+}
+
+.nav__link {
+    color: var(--clr-white);
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    transition: color 200ms ease-out;
+}
+
+.nav__link:hover,
+.nav__link:active,
+.nav__link:focus {
+    color: var(--bg-coral);
+}
+
+/*****HERO SECTION******/
+.hero {
+    color: var(--clr-white);
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-block: 18.61rem 0.31rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.strong {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0 auto;
+    width: 75%;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    background-color: var(--bg-coral);
+    border: none;
+    border-radius: 3rem;
+    color: var(--clr-white);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0.875rem;
+    font-weight: 700;
+    margin: clamp(1.5rem, 3vw, 2.5rem) auto 4.06rem;
+    padding: 1rem 2rem;
+}
+
+button:hover,
+button:active button:focus {
+    opacity: 0.85;
+}
+
+.hero__text {
+    font-weight: 400;
+    line-height: 1.625rem;
+    margin-inline: auto;
+    max-width: 39.8125rem;
+}
+
+/*******WHAT WE DO SECTION********/
+.what_we_do {
+    color: var(--clr-midnight-blue);
+    padding-block: 6.88rem;
+    text-align: center;
+}
+
+.what_we_do h2 {
+    margin-bottom: 2.5rem;
+}
+
+.wwd_p {
+    margin-bottom: 6.06rem;
+    margin-inline: auto;
+    max-width: 39.8125rem;
+    width: 100%;
+}
+
+.row {
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+    gap: 6rem 3.62rem;
+}
+
+.col {
+    display: flex;
+    flex-flow: column;
+}
+
+.wwd_col {
+    height: 12.0625rem;
+    justify-content: space-between;
+    max-width: 12.5rem;
+}
+
+.item__img {
+    height: 6.38rem;
+}
+
+.item__img img:hover,
+.item__img img:active,
+.item__img img:focus {
+    transform: rotateZ(20deg);
+    scale: 1.4;
+    transition: all 1.5s ease-out;
+}
+
+.small {
+    font-size: 0.875rem;
+}
+
+/*******RESULTS SECTION********/
+.results {
+    background: white url(./images/headphones_hero_2.jpg) no-repeat fixed;
+    background-position: top 30% left 40%;
+    background-size: cover;
+    color: var(--clr-white);
+    padding-block: 7.81rem 4.31rem;
+    text-align: center;
+}
+
+.results h2 {
+    margin-bottom: 2.5rem;
+}
+
+
+.results__text {
+    margin-bottom: calc(5rem - 1vw);
+}
+
+.results .row {
+    column-gap: 1.5rem;
+}
+
+.results_col {
+    width: 11.875rem;
+    height: 11.875rem;
+}
+
+.results figure {
+    position: relative;
+}
+
+figure:hover,
+figure:active,
+figure:focus {
+    transform: rotateZ(100deg);
+    translate: 5rem;
+    transition: all 1.5s ease-out;
+}
+
+.results img {
+    width: 100%;
+}
+
+.percentage,
+.results .small {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.percentage {
+    top: 20%;
+    font-size: 2.875rem;
+    font-weight: 700;
+    line-height: 1.625rem;
+    margin-top: 2.6rem;
+}
+
+.results_col .small {
+    width: 100%;
+    bottom: 20%;
+}
+
+
+/*******CONTACT US SECTION********/
+.contact__us {
+    padding-block: 6.87rem 8.12rem;
+    text-align: center;
+    color: var(--clr-midnight-blue);
+}
+
+.contact__us h2 {
+    margin-bottom: 3.5rem;
+}
+
+form {
+    display: grid;
+    gap: 2em;
+    max-width: 20.9375rem;
+    margin-inline: auto;
+}
+
+.contact__us input {
+    border: none;
+    outline: none;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 1rem;
+    padding-block: .5rem;
+    border-bottom: solid 1px #333;
+}
+
+.contact__us input::placeholder {
+    font-weight: 600;
+    color: var(--clr-midnight-blue);
+}
+
+/*******FOOTER********/
+footer {
+    background-color: var(--clr-midnight-blue);
+    padding-block: clamp(3.44rem, 7%, 5.74rem) 2.13rem;
+}
+
+.footer__logo {
+    flex-shrink: 0;
+    height: 2rem;
+    width: 10.0625rem;
+}
+
+footer .row {
+    align-items: center;
+    justify-content: center;
+    gap: 2.81rem;
+}
+
+.footer__icons {
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    gap: 2rem;
+}
+
+footer small {
+    text-align: center;
+    color: white;
+    opacity: 0.4;
+    display: block;
+    margin-top: 2.81rem;
+}
+
+@media (min-width: 500px) {
+
+    /*****HEADER SECTION******/
+    .hamburger {
+        display: none !important;
+    }
+
+    .hidden {
+        display: flex;
+    }
+
+    nav {
+        flex-flow: row;
+    }
+
+    .nav__logo {
+        display: grid;
+        width: unset;
+    }
+
+    .logo {
+        position: static;
+        transform: unset;
+    }
+
+    .nav__list {
+        flex-flow: row;
+        justify-content: space-between;
+        margin-top: 0;
+        width: unset;
+    }
+
+    .nav__link {
+        color: var(--clr-white);
+        display: block;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    /*******WHAT WE DO SECTION********/
+    .row {
+        align-items: center;
+        display: flex;
+        flex-flow: row wrap;
+        gap: 6rem 3.62rem;
+        justify-content: space-between;
+        margin-inline: auto;
+        max-width: 33.495rem;
+    }
+
+    /*******FOOTER SECTION********/
+    footer .row {
+        max-width: 100%;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 800px) {
+
+    /*****HEADER SECTION******/
+    .nav__list {
+        gap: 2.56rem;
+    }
+
+    /*******WHAT WE DO SECTION********/
+    .row {
+        flex-flow: row nowrap;
+        max-width: 100%;
+    }
+}
