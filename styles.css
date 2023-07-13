@@ -323,7 +323,6 @@ footer {
 }
 
 footer .row {
-    align-items: center;
     gap: 2.81rem;
     justify-content: center;
 }
