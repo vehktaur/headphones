@@ -44,8 +44,6 @@ body {
     width: 92%;
 }
 
-
-
 /*******HEADER AND HERO SECTION********/
 .header_and_hero {
     background: white url(./images/headphones_hero_1.jpg) no-repeat;
@@ -139,6 +137,7 @@ button {
     background-color: var(--bg-coral);
     border: none;
     border-radius: 3rem;
+    box-shadow: 0px 4px 10px -2px #333;
     color: var(--clr-white);
     cursor: pointer;
     display: inline-block;
@@ -203,11 +202,10 @@ button:active button:focus {
 .item__img img:hover,
 .item__img img:active,
 .item__img img:focus {
-    transform: rotateZ(20deg);
     scale: 1.4;
+    transform: rotateZ(20deg);
     transition: all 1.5s ease-out;
 }
-
 
 /*******RESULTS SECTION********/
 .results {
@@ -223,7 +221,6 @@ button:active button:focus {
     margin-bottom: 2.5rem;
 }
 
-
 .results__text {
     margin-bottom: calc(5rem - 1vw);
 }
@@ -233,8 +230,8 @@ button:active button:focus {
 }
 
 .results_col {
-    width: 11.875rem;
     height: 11.875rem;
+    width: 11.875rem;
 }
 
 .results figure {
@@ -245,8 +242,8 @@ figure:hover,
 figure:active,
 figure:focus {
     transform: rotateZ(100deg);
-    translate: 5rem;
     transition: all 1.5s ease-out;
+    translate: 5rem;
 }
 
 .results img {
@@ -255,22 +252,22 @@ figure:focus {
 
 .percentage,
 .results .small {
-    position: absolute;
     left: 50%;
+    position: absolute;
     transform: translate(-50%, -50%);
 }
 
 .percentage {
-    top: 20%;
     font-size: 2.875rem;
     font-weight: 700;
     line-height: 1.625rem;
     margin-top: 2.6rem;
+    top: 20%;
 }
 
 .results_col .small {
-    width: 100%;
     bottom: 20%;
+    width: 100%;
 }
 
 .small {
@@ -281,12 +278,11 @@ figure:focus {
     opacity: 0.9;
 }
 
-
 /*******CONTACT US SECTION********/
 .contact__us {
+    color: var(--clr-midnight-blue);
     padding-block: 6.87rem 8.12rem;
     text-align: center;
-    color: var(--clr-midnight-blue);
 }
 
 .contact__us h2 {
@@ -296,22 +292,22 @@ figure:focus {
 form {
     display: grid;
     gap: 2em;
-    max-width: 20.9375rem;
     margin-inline: auto;
+    max-width: 20.9375rem;
 }
 
 .contact__us input {
     border: none;
-    outline: none;
+    border-bottom: solid 1px #333;
     font-family: 'Source Sans 3', sans-serif;
     font-size: 1rem;
+    outline: none;
     padding-block: .5rem;
-    border-bottom: solid 1px #333;
 }
 
 .contact__us input::placeholder {
-    font-weight: 600;
     color: var(--clr-midnight-blue);
+    font-weight: 600;
 }
 
 /*******FOOTER********/
@@ -328,23 +324,23 @@ footer {
 
 footer .row {
     align-items: center;
-    justify-content: center;
     gap: 2.81rem;
+    justify-content: center;
 }
 
 .footer__icons {
     color: white;
-    font-size: 1.5rem;
     display: flex;
+    font-size: 1.5rem;
     gap: 2rem;
 }
 
 footer small {
-    text-align: center;
     color: white;
-    opacity: 0.4;
     display: block;
     margin-top: 2.81rem;
+    opacity: 0.4;
+    text-align: center;
 }
 
 @media (min-width: 500px) {
@@ -399,8 +395,8 @@ footer small {
 
     /*******FOOTER SECTION********/
     footer .row {
-        max-width: 100%;
         justify-content: space-between;
+        max-width: 100%;
     }
 }
 
