@@ -313,7 +313,7 @@ form {
 /*******FOOTER********/
 footer {
     background-color: var(--clr-midnight-blue);
-    padding-block: clamp(3.44rem, 7%, 5.74rem) 2.13rem;
+    padding-block: 4rem 2rem;
 }
 
 .footer__logo {
@@ -323,7 +323,7 @@ footer {
 }
 
 footer .row {
-    gap: 2.81rem;
+    gap: 3.62rem;
     justify-content: center;
 }
 
@@ -395,7 +395,7 @@ footer small {
     /*******FOOTER SECTION********/
     footer .row {
         justify-content: space-between;
-        max-width: 100%;
+        width: 100%;
     }
 }
 
